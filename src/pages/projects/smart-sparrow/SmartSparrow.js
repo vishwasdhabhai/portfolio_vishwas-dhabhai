@@ -18,7 +18,7 @@ import imageSprDesignSystemLightPlaceholder from 'assets/spr-design-system-light
 import imageSprDesignSystemLight from 'assets/spr-design-system-light.png';
 import imageSprLessonBuilderDarkLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import imageSprLessonBuilderDarkPlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from 'assets/incedoInvest.jpg';
+import imageSprLessonBuilderDark from 'assets/IncedoInvest.jpg';
 import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
@@ -125,13 +125,13 @@ export const SmartSparrow = () => {
               In the financial services sector, a discernible gap exists in the seamless
               communication between financial advisors and clients. The absence of a
               streamlined platform with dedicated login functionalities hinders effective
-              information exchange, particularly impacting clients ability to
-              conveniently manage investments. This underscores the need for a
-              comprehensive solution, encompassing advisor and client registration, secure
-              login protocols, and a user-friendly interface for portfolio management.
-              Addressing this gap presents an opportunity to optimize financial advisory
-              services, showcasing technical proficiency and advancing entrepreneurial
-              goals in the AI and CS sector.
+              information exchange, particularly impacting clients ability to conveniently
+              manage investments. This underscores the need for a comprehensive solution,
+              encompassing advisor and client registration, secure login protocols, and a
+              user-friendly interface for portfolio management. Addressing this gap
+              presents an opportunity to optimize financial advisory services, showcasing
+              technical proficiency and advancing entrepreneurial goals in the AI and CS
+              sector.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
