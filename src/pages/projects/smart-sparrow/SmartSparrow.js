@@ -18,7 +18,7 @@ import imageSprDesignSystemLightPlaceholder from 'assets/spr-design-system-light
 import imageSprDesignSystemLight from 'assets/spr-design-system-light.png';
 import imageSprLessonBuilderDarkLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import imageSprLessonBuilderDarkPlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from 'assets/spr-lesson-builder-dark.jpg';
+import imageSprLessonBuilderDark from 'assets/incedoInvest.jpg';
 import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
@@ -70,9 +70,9 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'Designing the future of Investing';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'I worked as the frontend lead on a major iteration of IncedoInvest product. We took the platform in a bold new direction, focusing on becoming the best tool for asset manager as well investors.';
 const roles = [
   'Art Direction',
   'UX and UI Design',
@@ -101,22 +101,13 @@ export const SmartSparrow = () => {
           srcSet={`${backgroundSpr.src} 1080w, ${backgroundSprLarge.src} 2160w`}
           placeholder={backgroundSprPlaceholder}
         />
-        <ProjectHeader
-          title={title}
-          description={description}
-          url="https://www.smartsparrow.com/"
-          roles={roles}
-        />
+        <ProjectHeader title={title} description={description} url="" roles={roles} />
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
               raised
               key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
-              }
+              srcSet={isDark ? [imageSprLessonBuilderDark] : [imageSprLessonBuilderDark]}
               placeholder={
                 isDark
                   ? imageSprLessonBuilderDarkPlaceholder
@@ -131,13 +122,16 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              In the financial services sector, a discernible gap exists in the seamless
+              communication between financial advisors and clients. The absence of a
+              streamlined platform with dedicated login functionalities hinders effective
+              information exchange, particularly impacting clients ability to
+              conveniently manage investments. This underscores the need for a
+              comprehensive solution, encompassing advisor and client registration, secure
+              login protocols, and a user-friendly interface for portfolio management.
+              Addressing this gap presents an opportunity to optimize financial advisory
+              services, showcasing technical proficiency and advancing entrepreneurial
+              goals in the AI and CS sector.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -174,7 +168,8 @@ export const SmartSparrow = () => {
                 large project, it was important to lay the foundations with a strong,
                 flexible design system that could evolve during the product’s development
                 cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+                the product itself as well as the website and marketing material. Used
+                NextJS for the making it possible.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -246,7 +241,7 @@ export const SmartSparrow = () => {
             </ProjectSectionColumns>
           </ProjectSection>
         </ThemeProvider>
-        <ProjectSection>
+        {/* <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
@@ -275,8 +270,8 @@ export const SmartSparrow = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
             />
           </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
+        </ProjectSection> */}
+        {/* <ProjectSection>
           <ProjectSectionColumns>
             <ProjectSectionContent>
               <ProjectTextRow>
@@ -325,7 +320,7 @@ export const SmartSparrow = () => {
               />
             </div>
           </ProjectSectionColumns>
-        </ProjectSection>
+        </ProjectSection> */}
         <ThemeProvider themeId="dark" data-invert>
           <Earth
             className={styles.earth}
@@ -399,12 +394,13 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent>
                   <ProjectTextRow center>
                     <ProjectSectionHeading>
-                      Next-generation learning experiences
+                      Next-generation investing experiences
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      The flexibility of the product allowed for developers to create
-                      engaging interactive experiences as highly configurable plugins that
-                      could then be used and manipulated by learning designers.
+                      The flexibility of the product allowed for customers and investment
+                      advisors to create engaging investing experiences as highly
+                      profitable returns that could then be used and manipulated by
+                      customers.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -424,12 +420,12 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Bringing 3D into learning
+                      Bringing 3D into Web - developing
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      One really cool example is the 3D screen plugin. Learning designers
-                      can load any model into it and then configure camera positions to
-                      animate to for each section.
+                      One really cool example is the 3D screen plugin. We have used
+                      three.js, With it, we have build 3D scenes, manipulate objects,
+                      apply textures, and define lighting for realistic effects.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -455,9 +451,9 @@ export const SmartSparrow = () => {
                       Interactivity
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learners can then be directed to specific parts of the model and
-                      shown labels. They’re also able to click and drag to orbit around
-                      and freely explore at any time.
+                      Enabling interaction between customers and advisors through engaging
+                      3D animations adds excitement to the investment process, alleviating
+                      potential boredom.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -486,12 +482,12 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Animation
+                      In-depth Understanding
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learning designers can pick an animation included in the model to
-                      play or loop for any section without having to use any complex
-                      animation tools.
+                      Empowering customers and advisors to delve into the intricacies of
+                      the market themselves provides a comprehensive understanding,
+                      reducing dependency on external advisors or company professionals.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -510,12 +506,9 @@ export const SmartSparrow = () => {
             <ProjectTextRow center centerMobile noMargin>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Ultimately the project was successful after Smart Sparrow and the aero
-                platform were{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
-                  acquired by Pearson in 2020
-                </Link>{' '}
-                to become a foundation for their next generation learning platform.
+                Ultimately the project was successful after IncedoInvest platform was been
+                awarded by Incedo Inc. USA in 2023 to become a foundation for their next
+                generation Investing platform.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>

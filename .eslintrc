@@ -4,6 +4,8 @@
   },
   "extends": ["eslint:recommended", "next/core-web-vitals"],
   "rules": {
+    "no-undef": "off",
+    "example-rule": "off",
     "semi": "error",
     "no-unused-vars": "warn",
     "import/no-anonymous-default-export": "off",

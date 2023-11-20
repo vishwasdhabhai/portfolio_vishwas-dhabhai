@@ -1,15 +1,15 @@
 import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
+import gamestackTexture2 from 'assets/gamestack-list.png';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
+import gamestackTexture from 'assets/gamestack-login.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+import sliceTexture from 'assets/slice-app.png';
+import sprTextureLarge from 'assets/IncedoInvest.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import sprTexture from 'assets/IncedoInvest.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Data Engineer', 'ML Engineer', 'Designer', 'Animator', 'Painter'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,9 +68,9 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Developer + Designer"
+        description="Design portfolio of Vishwas Dhabhai — a full-stack developer working on web & mobile
+          apps with a focus on motion, experience design, and accessibility.Also a ML Engineer currently working on LLM's."
       />
       <Intro
         id="intro"
@@ -83,8 +83,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="IncedoInvest - Asset Management Platform"
+        description="Contributing to the development of an ongoing project IncedoInvest - an investment application, tech-stack : .Net Core and React/NextJS."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -104,9 +104,9 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
+        title="Chat Application"
+        description="Enhanced real-time Chat App featuring multiple chat rooms also along with an integrated Social Authentication"
+        buttonText="View project"
         buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
@@ -117,7 +117,7 @@ export const Home = () => {
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              srcSet: [gamestackTexture2],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
@@ -128,13 +128,13 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Airbnb - Clone"
+        description="Used ReactJs & Tailwind for the frontend part and also Mongoose/MongoDB for storing all the user data"
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Annotating a Airbnb Application image in the laptop app',
           textures: [
             {
               srcSet: [sliceTexture, sliceTextureLarge],

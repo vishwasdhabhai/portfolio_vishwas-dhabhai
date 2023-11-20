@@ -86,7 +86,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
-            <Input
+            {/* <Input
               required
               className={styles.input}
               data-status={status}
@@ -125,8 +125,45 @@ export const Contact = () => {
                   </div>
                 </div>
               )}
-            </Transition>
+            </Transition> */}
+            <Text
+              size="l"
+              as="p"
+              className={styles.completeText}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS)}
+            >
+              Email : vishwasdhabhai35@gmail.com
+              <br />
+              Phone no. : +91-91193-99849
+              <br />
+              Whatsapp no. : +91-91193-99849
+            </Text>
+            <br />
+            <br />
+            <Text
+              size="l"
+              as="p"
+              className={styles.completeText}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS)}
+            >
+              Just mail me or ping me on whatsapp, I’ll get back to you within a couple
+              days, sit tight
+            </Text>
+            <br />
             <Button
+              secondary
+              iconHoverShift
+              className={styles.completeButton}
+              data-status={status}
+              style={getDelay(tokens.base.durationM)}
+              href="/"
+              icon="chevronRight"
+            >
+              Back to homepage
+            </Button>
+            {/* <Button
               className={styles.button}
               data-status={status}
               data-sending={sending}
@@ -138,7 +175,7 @@ export const Contact = () => {
               type="submit"
             >
               Send message
-            </Button>
+            </Button> */}
           </form>
         )}
       </Transition>
@@ -160,7 +197,8 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              Just mail me or ping me on whatsapp, I’ll get back to you within a couple
+              days, sit tight
             </Text>
             <Button
               secondary

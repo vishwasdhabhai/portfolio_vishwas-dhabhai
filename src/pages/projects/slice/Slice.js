@@ -3,7 +3,7 @@ import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png'
 import sliceAnnotation from 'assets/slice-annotation.png';
 import sliceAppLarge from 'assets/slice-app-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/slice-app.jpg';
+import sliceApp from 'assets/slice-app.png';
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
@@ -40,9 +40,9 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Airbnb - Clone';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
+  'This project entailed the strategic redesign of Airbnb, driven by a profound fascination with the platform. Motivated by a desire to intimately understand the development journey, I successfully executed this project to enhance and optimize the Airbnb experience..';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
 
 export const Slice = () => {
@@ -56,12 +56,7 @@ export const Slice = () => {
           placeholder={sliceBackgroundPlaceholder}
           opacity={0.8}
         />
-        <ProjectHeader
-          title={title}
-          description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
-          roles={roles}
-        />
+        <ProjectHeader title={title} description={description} url="" roles={roles} />
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
@@ -75,16 +70,18 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>Defining Features</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                In developing my Airbnb clone, I prioritized features like robust user
+                authentication, detailed property listings, efficient search, and a secure
+                booking system. Transparency was achieved with a review system, while
+                additional elements like payment integration and scalability planning were
+                key considerations for success.
               </ProjectSectionText>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+                Our solution excelled by implementing robust user authentication, detailed
+                property listings, efficient search, secure booking, and transparent
+                review features.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -110,12 +107,10 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                We successfully addressed challenges similar to those faced by Airbnb in
+                our project, implementing measures that significantly reduce issues such
+                as fraudulent listings, inconsistent property quality, and safety
+                concerns, enhancing overall user experience and trust.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -138,23 +133,24 @@ export const Slice = () => {
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
                 />
               </div>
-              <div className={styles.gridForeground}>
+              {/* <div className={styles.gridForeground}>
                 <Image
                   srcSet={[sliceAnnotation, sliceAnnotationLarge]}
                   placeholder={sliceAnnotationPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>Booking System</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                Our booking system is meticulously crafted to guarantee secure
+                transactions. It encompasses essential features like intuitive date
+                selection, prompt reservation confirmation, and a streamlined cancellation
+                process. These elements collectively contribute to a seamless and
+                trustworthy experience, ensuring user satisfaction and confidence in the
+                booking process.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -164,11 +160,14 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                The culmination of our project signifies a triumphant application of our
+                existing skills and the assimilation of cutting-edge industry practices.
+                This journey not only demonstrated our proficiency but also exposed us to
+                novel methodologies within the industry. Navigating through diverse
+                challenges, we embraced continuous learning, enriching our skill set. The
+                projects success is not just a testament to our capabilities but also to
+                our agility in adopting and implementing emerging practices, ensuring a
+                dynamic and forward-thinking approach to our work.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

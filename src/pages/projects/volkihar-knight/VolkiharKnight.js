@@ -74,13 +74,7 @@ export function VolkiharKnight() {
           placeholder={volkiharBackgroundPlaceholder}
           opacity={0.5}
         />
-        <ProjectHeader
-          title={title}
-          description={description}
-          linkLabel="Get the mod"
-          url="https://www.nexusmods.com/skyrimspecialedition/mods/4806/"
-          roles={roles}
-        />
+        <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectImage
@@ -194,14 +188,14 @@ export function VolkiharKnight() {
                 the game my armor design can be found being used for the Wandering Mage
                 armor set.
               </ProjectSectionText>
-              <Button
+              {/* <Button
                 secondary
                 iconHoverShift
                 icon="chevronRight"
                 href="https://store.steampowered.com/app/933480/Enderal_Forgotten_Stories/"
               >
                 View on Steam
-              </Button>
+              </Button> */}
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
