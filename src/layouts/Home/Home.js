@@ -107,7 +107,7 @@ export const Home = () => {
         title="Chat Application"
         description="Enhanced real-time Chat App featuring multiple chat rooms also along with an integrated Social Authentication"
         buttonText="View project"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink=""
         model={{
           type: 'phone',
           alt: 'App login screen',
