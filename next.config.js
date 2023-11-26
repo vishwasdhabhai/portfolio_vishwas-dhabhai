@@ -36,4 +36,12 @@ module.exports = {
 
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: '/articles/:slug*',
+        destination: '/articles/:slug*',
+      },
+    ];
+  },
 };
